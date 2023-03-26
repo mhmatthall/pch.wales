@@ -13,7 +13,7 @@ export default function Header() {
         />
         <div className={style.logoText}>
           <h1 className={style.title}>Person-Centred Cancer Care for Wales</h1>
-          <h2 className={style.subtitle}>Matt Hall's PhD project</h2>
+          <h2 className={style.subtitle}>Matt Hall&apos;s PhD project</h2>
         </div>
       </div>
       <nav className={style.navbar}>

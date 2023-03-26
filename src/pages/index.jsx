@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <Layout isHome={true}>
       <Head>
-        <title>Matt Hall's PhD Project – Empowering those with cancer in Wales</title>
+        <title>Matt Hall&apos;s PhD Project &ndash; Empowering those with cancer in Wales</title>
         <meta name="description" content="Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here." />
       </Head>
       <div>
@@ -17,13 +17,13 @@ export default function Page() {
           Welcome!
         </h1>
         <p>
-          Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation.
+          Let&apos;s work together to improve the quality-of-life for those with cancer in Wales through digital innovation.
         </p>
         <div className={style.contentSection}>
           <h2>The background</h2>
           <p>
             Cancer diagnosis is a notoriously grievous and brutal experience,
-            and one that's extraordinarily difficult to deal with on a physical,
+            and one that&apos;s extraordinarily difficult to deal with on a physical,
             mental, and psychosocial level. Treatment regimens come thick and
             fast; constant appointments, harsh treatments, side effects, and the
             complete and abrupt disruption to every aspect of the day-to-day can
@@ -43,14 +43,14 @@ export default function Page() {
           <p>
             Improving this difficult situation in Wales requires a complete shift
             in the way cancer care is delivered: a holistic focus no longer
-            limited to simply trying to extend one's lifespan or achieve maximal
+            limited to simply trying to extend one&apos;s lifespan or achieve maximal
             cost efficiency. Factors such as emotional support, involvement of
             family and friends, shared decision-making, self-care, respect for
             preferences, and continuity of care need to take centre stage in
             cancer practice. Thankfully, this <b>person-centred</b> model of
-            healthcare has been formally recognised and become part of NHS Wales'
+            healthcare has been formally recognised and become part of NHS Wales&apos;
             new central strategy — codified in recent national policy. However,
-            it's a long and tumultuous road ahead for the service as it endures
+            it&apos;s a long and tumultuous road ahead for the service as it endures
             extreme financial constraints and record-long treatment waiting lists.
           </p>
         </div>
@@ -58,12 +58,12 @@ export default function Page() {
           <h2>The vision</h2>
           <p>
             We envision a future cancer care experience rich with technology
-            that's{" "}
+            that&apos;s{" "}
             <b>designed by those receiving care, for those receiving care</b>. An
             interconnected and intelligent system of apps, wearable technology,
             smart devices, inference, and data will provide an accurate,
-            subjective perspective of each person's life. Caregivers will better
-            understand what it's really like for those undergoing treatment, who
+            subjective perspective of each person&apos;s life. Caregivers will better
+            understand what it&apos;s really like for those undergoing treatment, who
             will subequently be able to keep care receivers continuously educated
             on and involved in the decision-making for their treatment. Care
             receivers will be empowered with the knowledge to decide on their own
@@ -80,20 +80,20 @@ export default function Page() {
             person-centred vision. Working directly with those receiving care at{" "}
             <b>Velindre Cancer Centre</b> in Cardiff, we will co-design and trial
             sustainable digital cancer interventions that empower those using
-            them. Due to the participatory nature of the projectm we don't yet
+            them. Due to the participatory nature of the projectm we don&apos;t yet
             know what these interventions will entail, but our team of computer
             scientists and healthcare professionals are ready to make them
             succeed.
           </p>
           <p>
-            Of course, creating such interventions is fruitless if there's no
+            Of course, creating such interventions is fruitless if there&apos;s no
             commitment from organisations and management. Luckily, NHS Wales is
             primed and ready to embrace person-centred healthcare with the
             creation of the Welsh Value in Health Centre, and Velindre Cancer
             Centre are undertaking a radical redevelopment of their strategy to
-            put 'digital first'. We're confident then that our work will
+            put &apos;digital first&apos;. We&apos;re confident then that our work will
             contribute to the future of cancer care in Wales and provide some of
-            the groundwork for NHS Wales' massive, world-leading redevelopment.
+            the groundwork for NHS Wales&apos; massive, world-leading redevelopment.
           </p>
           <h3>The technical details</h3>
           <p>
