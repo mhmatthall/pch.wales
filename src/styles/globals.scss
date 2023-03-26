@@ -1,0 +1,56 @@
+// pch.wales global style sheet
+//    Use extremely sparingly. Has to exist to override the browser.
+@use "theme";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-family: theme.$body-font;
+  font-weight: normal;
+  font-size: theme.$default-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+
+  font-family: theme.$title-font;
+  font-weight: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: theme.$primary-colour;
+  }
+
+  &:hover {
+    color: theme.$dark-colour;
+  }
+
+  &:active {
+    color: theme.$secondary-colour;
+  }
+}

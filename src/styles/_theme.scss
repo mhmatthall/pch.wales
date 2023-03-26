@@ -1,0 +1,17 @@
+// pch.wales master theme variables
+@use "fonts";
+
+// Colours
+$primary-colour: #4444FF;
+$secondary-colour: #FF5811;
+$highlight-colour: #FFFF44;
+$light-colour: #FFF;
+$dark-colour: #222;
+
+// Typography
+$body-font: 'Frutiger LT Std', 'Segoe UI', Helvetica, sans-serif;
+$title-font: 'Akzidenz-Grotesk BQ', Helvetica, sans-serif;
+$default-font-size: calc(15px + 0.390625vw);
+
+// Spacing
+$page-margin: 10vw;
