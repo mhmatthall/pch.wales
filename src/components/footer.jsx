@@ -1,5 +1,5 @@
 // pch.wales common footer component
-import style from './footer.module.scss';
+import style from "./footer.module.scss";
 
 export default function Footer({ showVunhstLogo }) {
   return (

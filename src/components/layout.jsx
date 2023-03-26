@@ -1,13 +1,13 @@
 // pch.wales default page layout
-import Head from 'next/head';
+import Head from "next/head";
 
-import Header from './header';
-import Footer from './footer';
+import Header from "./header";
+import Footer from "./footer";
 
-import style from './layout.module.scss';
+import style from "./layout.module.scss";
 
 // Global variables
-export const pageTitleSuffix = ' | pch.wales';
+export const pageTitleSuffix = " | pch.wales";
 
 // Here comes the layout!
 export default function Layout({ children, isHome }) {

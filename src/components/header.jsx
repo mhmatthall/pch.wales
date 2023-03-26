@@ -1,7 +1,7 @@
 // pch.wales common header component
 import NavLink from "./navlink";
 
-import style from './header.module.scss';
+import style from "./header.module.scss";
 
 export default function Header() {
   return (
