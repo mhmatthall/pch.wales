@@ -1,0 +1,26 @@
+{
+  "short_name": "Person-Centred Healthcare for Wales",
+  "name": "Matt Hall's PhD Project – Empowering those with cancer in Wales",
+  "description": "Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here.",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "theme_color": "#4444ff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
