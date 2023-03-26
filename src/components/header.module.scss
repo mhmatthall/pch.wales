@@ -1,0 +1,98 @@
+@use "../styles/theme";
+
+.container {
+  position: relative;
+  background-color: theme.$primary-colour;
+  color: theme.$light-colour;
+}
+
+.logo {
+  display: flex;
+  height: 3rem;
+  padding: 1rem theme.$page-margin;
+
+  img {
+    padding-right: 0.5rem;
+  }
+
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .title {
+    // Override theme style
+    font-size: calc(18px + 0.390625vw);
+  }
+
+  .subtitle {
+    // Override theme style
+    font-size: theme.$default-font-size;
+    text-transform: none;
+    font-family: theme.$body-font;
+  }
+}
+
+.navbar {
+  background-color: theme.$light-colour;
+  padding: 0.3rem theme.$page-margin;
+  box-shadow: 0px 10px 20px -10px #CECECE;
+
+  ul {
+    // Remove default bulleted list style
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 0.2rem;
+  }
+
+  li {
+    // Flex at equal widths
+    flex: 1;
+  }
+
+  .button {
+    // Make clickable area span properly
+    display: block;
+
+    // Typography
+    font-family: theme.$title-font;
+    text-align: center;
+
+    // Button styling
+    padding: 0.5rem;
+    border-radius: 64px;
+
+    // Transitions
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      background-color: transparentize(theme.$primary-colour, 0.8);
+      box-shadow: inset 0px 0px 15px 10px theme.$light-colour;
+      letter-spacing: 0.05rem;
+    }
+
+    &:active {
+      // No transitions for the current page, thanks
+      transition: none;
+    }
+  }
+
+  // We need to stop name-mangling for the `id` property so NavLink can see it
+  :global {
+    #active {
+      outline: 2px solid theme.$primary-colour;
+      box-shadow: inset 0px 0px 10px 0px lighten($color: theme.$primary-colour, $amount: 25%);
+
+      &:hover {
+        // Override some button styling
+        background-color: theme.$light-colour;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

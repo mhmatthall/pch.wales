@@ -1,0 +1,60 @@
+@use "../styles/theme";
+
+.container {
+  position: relative;
+  padding: 2rem theme.$page-margin;
+  color: theme.$light-colour;
+  background-color: theme.$dark-colour;
+}
+
+// We manage the footer sections with a flexi-grid
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  // Cap width for ultrawide displays
+  max-width: 1440px;
+}
+
+// We separate our sections into columns
+.attributionCol {}
+
+.socialCol {
+  // Right-align
+  // margin-left: auto;
+}
+
+// Each column has a list of things to display, which we flex
+.attributionLogos,
+.socialLogos {
+  // Remove default bulleted list style
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+
+  // Let the elements breathe
+  margin-top: 0.5rem;
+
+  li {
+    flex: auto;
+  }
+
+  a {
+    // Make clickable area fit the img
+    display: block;
+  }
+}
+
+// Section-specific tweaks
+.attributionLogos {
+  gap: 1rem;
+  max-width: 250px;
+}
+
+.socialLogos {
+  gap: 0.5rem;
+  max-width: 150px;
+}

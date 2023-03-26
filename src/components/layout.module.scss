@@ -1,0 +1,22 @@
+// pch.wales master page layout
+@use "../styles/theme";
+
+// `root` is basically a proxy for `body`
+.root {}
+
+// `main` is where the copy lives
+.main {
+  padding: 2rem theme.$page-margin;
+}
+
+// Temporary!
+// Using basic spacing for now, will be changed
+.contentSection {
+  padding: 0.5rem 0 0;
+
+  h2,
+  h3,
+  p {
+    padding: 0.5rem 0 0;
+  }
+}
