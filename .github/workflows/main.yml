@@ -19,10 +19,26 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Create new ./tmp/restart.txt file (to trigger Passenger app restart)
+      - name: Upload site files to server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: matthall.io
+          username: robot@matthall.io
+          protocol: ftps
+          port: 21
+          password: ${{ secrets.ftp_password }}
+          local-dir: ./
+          server-dir: pch.wales/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            README.md
+
+      - name: Create ./tmp/restart.txt
         run: mkdir ./tmp && date > ./tmp/restart.txt
 
-      - name: Upload to server
+      - name: Upload ./tmp/restart.txt to server (to trigger Passenger app restart)
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: matthall.io
