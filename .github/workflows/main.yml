@@ -19,6 +19,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Create new ./tmp/restart.txt file (to trigger Passenger app restart)
+        run: mkdir ./tmp && date > ./tmp/restart.txt
+
       - name: Upload to server
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
