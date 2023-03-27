@@ -14,7 +14,7 @@ export default function Page() {
         <meta name="description" content="Template for S02 page" />
       </Head>
       <div>
-        Resources
+        Study S02
       </div>
     </Layout>
   )
