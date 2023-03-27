@@ -11,6 +11,12 @@ export default function Page() {
       <Head>
         <title>Matt Hall&apos;s PhD Project &ndash; Empowering those with cancer in Wales</title>
         <meta name="description" content="Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://pch.wales/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Matt Hall's PhD Project – Empowering those with cancer in Wales" />
+        <meta property="og:description" content="Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here." />
+        <meta property="og:image" content="https://pch.wales/img/card_test.png" />
       </Head>
       <div>
         <h1>

@@ -16,6 +16,8 @@ export default function Layout({ children, isHome }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#4444FF" />
+        <meta name="author" content="Matt Hall" />
+        <meta name="twitter:creator" content="@matthallSU" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/img/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
