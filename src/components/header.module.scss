@@ -24,7 +24,7 @@
 
   .title {
     // Override theme style
-    font-size: calc(18px + 0.390625vw);
+    font-size: theme.$slightly-bigger-font-size;
   }
 
   .subtitle {
@@ -38,7 +38,7 @@
 .navbar {
   background-color: theme.$light-colour;
   padding: 0.3rem theme.$page-margin;
-  box-shadow: 0px 10px 20px -10px #CECECE;
+  box-shadow: 0px 10px 20px -10px transparentize(theme.$dark-colour, 0.8);
 
   ul {
     // Remove default bulleted list style
