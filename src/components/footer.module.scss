@@ -52,10 +52,13 @@
 // Section-specific tweaks
 .attributionLogos {
   gap: 1rem;
-  max-width: 250px;
+  max-width: 10rem;
 }
 
 .socialLogos {
+  gap: 0.75rem;
+  max-width: 7rem;
+}
 
 .infoBar {
   background-color: theme.$darkest-colour;
