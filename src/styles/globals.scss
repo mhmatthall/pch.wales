@@ -10,6 +10,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 
+  color: theme.$darkest-colour;
+
   font-family: theme.$body-font;
   font-weight: normal;
   font-size: theme.$default-font-size;

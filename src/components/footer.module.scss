@@ -1,14 +1,15 @@
 @use "../styles/theme";
 
 .container {
-  position: relative;
-  padding: 2rem theme.$page-margin;
   color: theme.$light-colour;
   background-color: theme.$dark-colour;
 }
 
 // We manage the footer sections with a flexi-grid
 .grid {
+  position: relative;
+  padding: 2rem theme.$page-margin;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -55,6 +56,11 @@
 }
 
 .socialLogos {
-  gap: 0.5rem;
-  max-width: 150px;
+
+.infoBar {
+  background-color: theme.$darkest-colour;
+  padding: 1rem theme.$page-margin;
+
+  // Right-align
+  text-align: right;
 }

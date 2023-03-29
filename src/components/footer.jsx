@@ -78,6 +78,9 @@ export default function Footer({ showVunhstLogo }) {
           </ul>
         </div>
       </div>
+      <div className={style.infoBar}>
+        Not affiliated with the Welsh Government
+      </div>
     </footer>
   );
 }
