@@ -2,3 +2,68 @@
 @use "@/styles/theme";
 
 .contentRoot {}
+
+
+// TODO: move to layout SCSS file
+.wide {
+  margin: 0 -10vw;
+  padding: 1rem 10vw;
+  background-color: theme.$primary-colour;
+  box-shadow: inset 0px 0px 1rem 0px transparentize(theme.$dark-colour, 0.8);
+
+  // Typography
+  color: theme.$light-colour;
+
+  .fileList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin: 1rem 0;
+
+    // Override ul padding
+    padding: 0;
+
+    .fileCard {
+      display: flex;
+      align-content: start;
+      overflow: hidden;
+
+      width: 8rem;
+      height: 10rem;
+
+      background-color: theme.$light-colour;
+      border-radius: 4px;
+      box-shadow: 0px 10px 10px -10px transparentize(theme.$dark-colour, 0.8);
+
+      // Override li padding
+      padding: 0;
+
+      img {
+        // Fill parent
+        width: 100%;
+        object-fit: cover;
+
+        // Fade out bottom of image
+        mask: linear-gradient(black 10%, transparent 60%);
+      }
+
+      .fileName {
+        // Put text in a fixed-size box and align to bottom
+        display: flex;
+        align-items: flex-end;
+        height: 3rem;
+
+        // Re-position text on top of image
+        position: relative;
+        padding: 0 0.5rem;
+        bottom: 5.25rem;
+
+        // Typography
+        font-family: theme.$title-font;
+        line-height: 100%;
+      }
+    }
+  }
+}
