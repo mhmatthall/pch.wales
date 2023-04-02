@@ -3,7 +3,8 @@ import Head from 'next/head';
 
 import Layout, { pageTitleSuffix } from "@/components/layout";
 
-import style from '@/components/layout.module.scss';
+import siteStyle from "@/components/layout.module.scss";
+import style from './study.module.scss';
 
 export default function Page() {
   return (
