@@ -1,7 +1,9 @@
 // pch.wales study S02 page content
 import Head from 'next/head';
+import Link from 'next/link';
 
 import Layout, { pageTitleSuffix } from "@/components/layout";
+import { S02Form } from "@/components/forms";
 
 import siteStyle from "@/components/layout.module.scss";
 import style from './study.module.scss';
@@ -51,6 +53,18 @@ export default function Page() {
               How might they consider introducing technology into the pathway to make things better?
             </li>
           </ul>
+        </div>
+        <div className={siteStyle.outlineSection}>
+          <h2>
+            Get involved
+          </h2>
+          <p>
+            Are you an individual with cancer care experience in South Wales? I'd love to hear from you!
+          </p>
+          <p>
+            Have a read through this page and if you're keen to take part, fill out the form below and I'll get back to you!
+          </p>
+          <S02Form />
         </div>
         <div className={style.wide}>
           <h1>
