@@ -3,6 +3,28 @@
 
 .contentRoot {}
 
+.titleDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  // Typography
+  font-family: theme.$title-font;
+  font-size: theme.$slightly-bigger-font-size;
+  text-transform: uppercase;
+  color: theme.$primary-colour;
+
+  .right {
+    margin-left: auto;
+  }
+}
+
+.hLine {
+  flex: 1;
+  height: 0.2rem;
+  background: theme.$primary-colour;
+}
 
 // TODO: move to layout SCSS file
 .wide {
