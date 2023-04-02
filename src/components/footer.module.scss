@@ -1,14 +1,18 @@
 @use "@/styles/theme";
 
+// Full-width footer container for responsive background style
 .container {
   color: theme.$light-colour;
-  background-color: theme.$dark-colour;
+  background-color: theme.$darkest-colour;
+
+  // Always appear at bottom of page
+  margin-top: auto;
 }
 
 // We manage the footer sections with a flexi-grid
 .grid {
   position: relative;
-  padding: 2rem theme.$page-margin;
+  margin: 2rem theme.$page-margin;
 
   display: flex;
   flex-direction: column;
@@ -16,53 +20,54 @@
 
   // Cap width for ultrawide displays
   max-width: 1440px;
-}
 
-// We separate our sections into columns
-.attributionCol {}
+  .section {
+    // TODO: make responsive; should be 2 columns on desktop, 1 on mobile
 
-.socialCol {
-  // Right-align
-  // margin-left: auto;
-}
+    ul {
+      // Remove default bulleted list style
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-// Each column has a list of things to display, which we flex
-.attributionLogos,
-.socialLogos {
-  // Remove default bulleted list style
-  list-style: none;
-  padding: 0;
-  margin: 0;
+      display: flex;
 
-  display: flex;
+      // Let the elements breathe
+      margin-top: 0.5rem;
 
-  // Let the elements breathe
-  margin-top: 0.5rem;
+      li {
+        flex: auto;
+      }
 
-  li {
-    flex: auto;
+      a {
+        // Make clickable area fit the img
+        display: block;
+      }
+    }
+    
+    // Specific section tweaks
+    .attributionLogos {
+      gap: 1rem;
+      max-width: 10rem;
+    }
+    
+    .socialLogos {
+      gap: 0.75rem;
+      max-width: 7rem;
+    }
   }
-
-  a {
-    // Make clickable area fit the img
-    display: block;
-  }
 }
 
-// Section-specific tweaks
-.attributionLogos {
-  gap: 1rem;
-  max-width: 10rem;
+// Line to separate sections
+.divider {
+  margin: 0 theme.$page-margin;
+  height: 0.2rem;
+  background: theme.$primary-colour;
 }
 
-.socialLogos {
-  gap: 0.75rem;
-  max-width: 7rem;
-}
-
+// Info bar at bottom of page
 .infoBar {
-  background-color: theme.$darkest-colour;
-  padding: 1rem theme.$page-margin;
+  margin: 1rem theme.$page-margin;
 
   // Right-align
   text-align: right;

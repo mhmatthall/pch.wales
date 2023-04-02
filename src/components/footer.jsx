@@ -5,7 +5,7 @@ export default function Footer({ showVunhstLogo }) {
   return (
     <footer className={style.container}>
       <div className={style.grid}>
-        <div className={style.attributionCol}>
+        <div className={style.section}>
           {
             showVunhstLogo ? (
               <h3>
@@ -46,7 +46,7 @@ export default function Footer({ showVunhstLogo }) {
             )}
           </ul>
         </div>
-        <div className={style.socialCol}>
+        <div className={style.section}>
           <h3>
             Questions or comments? Get in touch:
           </h3>
@@ -78,6 +78,7 @@ export default function Footer({ showVunhstLogo }) {
           </ul>
         </div>
       </div>
+      <div className={style.divider}/>
       <div className={style.infoBar}>
         Not affiliated with the Welsh Government
       </div>

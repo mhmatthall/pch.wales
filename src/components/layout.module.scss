@@ -1,8 +1,13 @@
 // pch.wales master page layout
 @use "@/styles/theme";
 
-// `root` is basically a proxy for `body`
-.root {}
+// Root site wrapper to ensure sticky header & footer
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
 
 // `main` is where the copy lives
 .main {
