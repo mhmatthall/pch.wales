@@ -1,9 +1,9 @@
 // pch.wales/team page content
-import Head from 'next/head';
+import Head from "next/head";
 
 import Layout, { pageTitleSuffix } from "@/components/layout";
 
-import style from '@/components/layout.module.scss';
+import style from "@/components/layout.module.scss";
 
 export default function Page() {
   return (

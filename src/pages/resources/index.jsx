@@ -1,10 +1,10 @@
 // pch.wales/resources page content
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 
 import Layout, { pageTitleSuffix } from "@/components/layout";
 
-import style from '@/components/layout.module.scss';
+import style from "@/components/layout.module.scss";
 
 export default function Page() {
   return (

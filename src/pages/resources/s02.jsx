@@ -1,12 +1,12 @@
 // pch.wales study S02 page content
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 
 import Layout, { pageTitleSuffix } from "@/components/layout";
 import { S02Form } from "@/components/forms";
 
 import siteStyle from "@/components/layout.module.scss";
-import style from './study.module.scss';
+import style from "./study.module.scss";
 
 export default function Page() {
   return (
@@ -22,15 +22,15 @@ export default function Page() {
         </Link>
         <div className={siteStyle.contentSection}>
           <h1 className={style.title}>
-            Understanding the individual's perspective of cancer care in South Wales
+            Understanding the individual&apos;s perspective of cancer care in South Wales
           </h1>
           <div className={style.titleDetails}>
-      <div>
+            <div>
               Dec 2022&mdash;May 2023
             </div>
             <div className={style.hLine} />
             <div className={style.right}>
-        Study S02
+              Study S02
             </div>
           </div>
           <p>
@@ -59,12 +59,20 @@ export default function Page() {
             Get involved
           </h2>
           <p>
-            Are you an individual with cancer care experience in South Wales? I'd love to hear from you!
+            Are you an individual with cancer care experience in South Wales? I&apos;d love to hear from you!
           </p>
           <p>
-            Have a read through this page and if you're keen to take part, fill out the form below and I'll get back to you!
+            Have a read through this page and if you&apos;re keen to take part, fill out the form below and I&apos;ll get back to you!
           </p>
           <S02Form />
+        </div>
+        <div className={siteStyle.contentSection}>
+          <h1>
+            About the study
+          </h1>
+          <p>
+            Lorem ipsum.
+          </p>
         </div>
         <div className={style.wide}>
           <h1>

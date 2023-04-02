@@ -1,5 +1,5 @@
 // pch.wales middleware
-//    Makes all routes' URLs case-insensitive
+//    Makes all routes" URLs case-insensitive
 import { NextResponse } from "next/server";
 
 export function middleware(req) {
@@ -25,6 +25,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    '/((?!api|public|_next/static|_next/image|favicon.ico).*)',
+    "/((?!api|public|_next/static|_next/image|favicon.ico).*)",
   ],
 };
