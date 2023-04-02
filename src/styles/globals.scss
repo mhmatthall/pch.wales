@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 
-  color: theme.$darkest-colour;
+  color: theme.$dark-colour;
 
   font-family: theme.$body-font;
   font-weight: normal;
@@ -33,7 +33,7 @@ h2 {
   text-transform: uppercase;
 }
 
-p {
+p, li {
   margin: 0;
   padding: 0;
 
