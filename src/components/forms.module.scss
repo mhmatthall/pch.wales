@@ -1,0 +1,69 @@
+@use "@/styles/theme";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  // Cap form's width and centre elements when exceeded
+  max-width: 30rem;
+  margin: 0 auto;
+
+  .formItem {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      padding: 0.25rem 0;
+      font-family: theme.$title-font;
+    }
+
+    input,
+    button {
+      padding: 0.5rem 0.75rem;
+      border: 2px theme.$primary-colour solid;
+      box-shadow: 0px 10px 10px -10px transparentize(theme.$dark-colour, 0.8);
+      border-radius: 64px;
+      font: inherit;
+
+      // Show focus
+      &:focus {
+        outline: none;
+        border: 2px theme.$secondary-colour solid;
+      }
+    }
+
+    // Additional button styles
+    button {
+      background-color: theme.$primary-colour;
+      color: theme.$light-colour;
+      font-family: theme.$title-font;
+      text-transform: uppercase;
+    }
+  }
+
+  // For checkboxes and radio buttons when we want them shown on the same line
+  .formItemAdjacent {
+    @extend .formItem;
+
+    // Override parent flex
+    display: flex;
+    flex-direction: row;
+
+    // Style the input component
+    input {
+      // Override default styling
+      appearance: none;
+
+      padding: 0.75rem;
+      margin: auto 0 auto 0.5rem;
+      box-sizing: border-box;
+
+      &:checked {
+        background-color: theme.$primary-colour;
+        mask: url("/img/check-fill.svg") center no-repeat;
+        -webkit-mask: url("/img/check-fill.svg") center no-repeat;
+      }
+    }
+  }
+}
