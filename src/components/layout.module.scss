@@ -11,19 +11,36 @@
 
 // `main` is where the copy lives
 .main {
-  padding: 2rem theme.$page-margin;
+  margin: 2rem theme.$page-margin;
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+  }
+
+  li {
+    padding: 0.25rem 0;
+  }
 }
 
-// Temporary!
-// Using basic spacing for now, will be changed
 .contentSection {
-  padding: 0.5rem 0 0;
+  padding: 1rem 0;
 
+  h1,
   h2,
-  h3,
-  p {
-    padding: 0.5rem 0 0;
+  h3 {
+    padding: 0.5rem 0;
   }
+
+  p {
+    padding: 0.5rem 0;
+  }
+
+  // When paragraphs are continuous, prevent double padding
+  p + p {
+    padding: 0 0 0.5rem;
+  }
+}
 
 // For call-to-action elements, like forms and quick buttons
 .outlineSection {
