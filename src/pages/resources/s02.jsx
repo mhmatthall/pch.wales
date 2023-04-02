@@ -11,8 +11,8 @@ export default function Page() {
     <Layout isHome={false}>
       {/* Inject page-specific HTML header info */}
       <Head>
-        <title>{"S02" + pageTitleSuffix}</title>
-        <meta name="description" content="Template for S02 page" />
+        <title>{"Understanding the individual's perspective of cancer care in South Wales | Study S02" + pageTitleSuffix}</title>
+        <meta name="description" content="I think that there's room to make things better for those in South Wales undergoing cancer care – especially through thoughtfully-designed technology. I want to understand what cancer care receivers currently go through in South Wales and work with them to consider areas which could be improved as well as potential applications of technology which would enable more person-centred cancer care." />
       </Head>
       <div>
         Study S02
