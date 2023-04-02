@@ -19,4 +19,22 @@
   p {
     padding: 0.5rem 0 0;
   }
+
+// For call-to-action elements, like forms and quick buttons
+.outlineSection {
+  @extend .contentSection;
+
+  padding: 1rem 1.5rem 2rem;
+
+  // Cap section's width and centre elements when exceeded
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+
+  // Outline
+  border: 0.75rem theme.$primary-colour solid;
+
+  // Let the outline section overflow slightly so width isn't too constrained
+  // margin: 0 -1rem;
 }
