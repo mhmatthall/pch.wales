@@ -1,15 +1,23 @@
 # [Person-Centred Cancer Care for Wales](https://pch.wales/)
 
-**Matt Hall's PhD Project – Empowering those with cancer in Wales**
-
-**[View this website live at pch.wales](https://pch.wales/)**
-
 [![ci/cd](https://github.com/mhmatthall/pch.wales/actions/workflows/main.yml/badge.svg)](https://github.com/mhmatthall/pch.wales/actions/workflows/main.yml)
 
-## About
-Hey! I'm Matt and I'm empowering those with cancer in Wales through person-centred digital interventions. This site is to support and promote my PhD project as part of the EPIC CDT at Swansea University, working with Velindre University NHS Trust. It'll change as and when I need it to throughout the PhD.
 
-The site is built with Next.js, using modular Sass for styling. CI/CD through Github Actions means it's nice and easy to update, too!
+## About
+Hey! I'm Matt and my PhD is all about empowering those with cancer in Wales by co-creating person-centred digital interventions. I've created this project website to support and promote my PhD work, and further to promote and advocate for person-centred healthcare in Wales and beyond.
+
+**[View the site live: pch.wales!](https://pch.wales/)**
+
+## Technical details
+The site is built with Next.js, using modular Sass for styling and eslint for linting. It's hosted on a Node server in the UK, with CI/CD via Github Actions making it nice and easy to update, too!
+
+You're welcome to clone and re-use the site, but because it's a personal project it has some weird requirements. Namely, an `.env.local` file needs to be specified in the project root to inject various secrets into the Node environment at runtime.
+
+Here's a list of the current secrets in use:
+| Key                      | Description              |
+| ------------------------ | ------------------------ |
+| `NOTION_API_KEY`         | Notion API [integration key](https://notion.so/my-integrations)    |
+| `NOTION_DATABASE_ID_S02` | Notion object ID for sending study S02 form responses to Notion DB |
 
 ## Thanks
 Thanks to all my friends and peers at Swansea University and Velindre University NHS Trust.
