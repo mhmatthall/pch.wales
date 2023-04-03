@@ -83,16 +83,16 @@ export default function Page() {
           </p>
           <ul className={style.fileList}>
             <li className={style.fileCard}>
-              <Link href="/resources/s02/s02h02v03.pdf">
-                <img src="/resources/s02/s02h02v03.jpg" alt="Participant information sheet preview" />
+              <Link href="/resources/s02/S02H02V03.pdf">
+                <img src="/resources/s02/S02H02V03.jpg" alt="Participant information sheet thumbnail showing preview of first page" />
                 <div className={style.fileName}>
                   Participant information sheet
                 </div>
               </Link>
             </li>
             <li className={style.fileCard}>
-              <Link href="/resources/s02/s02h01v01.pdf">
-                <img src="/resources/s02/s02h01v01.jpg" alt="Participant information sheet preview" />
+              <Link href="/resources/s02/S02H01V01.pdf">
+                <img src="/resources/s02/S02H01V01.jpg" alt="Consent form thumbnail showing preview of first page" />
                 <div className={style.fileName}>
                   Consent form
                 </div>
