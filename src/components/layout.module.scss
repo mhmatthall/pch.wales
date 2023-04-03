@@ -1,17 +1,18 @@
 // pch.wales master page layout
 @use "@/styles/theme";
 
-// Root site wrapper to ensure sticky header & footer
+// The root object of the site, including header and footer
 .root {
+  // Ensure sticky header & footer
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
 }
 
-// `main` is where the copy lives
+// The root object of Layout
 .main {
-  margin: 2rem theme.$page-margin;
+  margin: 1rem theme.$page-margin;
 
   ul {
     margin: 0;
@@ -22,6 +23,9 @@
     padding: 0.25rem 0;
   }
 }
+
+// The root object of each page that uses Layout
+.contentRoot {}
 
 .contentSection {
   padding: 1rem 0;
@@ -37,7 +41,7 @@
   }
 
   // When paragraphs are continuous, prevent double padding
-  p + p {
+  p+p {
     padding: 0 0 0.5rem;
   }
 }
