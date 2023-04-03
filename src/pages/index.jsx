@@ -41,7 +41,7 @@ export default function Page() {
             Here for the study?
           </h2>
           <p>
-            If you've seen one of the adverts for my study involving <b>cancer care receivers in South Wales</b>, you can find out more about it here:
+            If you&apos;ve seen one of the adverts for my study involving <b>cancer care receivers in South Wales</b>, you can find out more about it here:
           </p>
           <Link href="/resources/s02" className={style.button}>
             Learn more &raquo;
