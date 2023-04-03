@@ -1,5 +1,6 @@
 // pch.wales home page content
 import Head from "next/head";
+import Link from "next/link";
 
 import Layout from "@/components/layout";
 
@@ -18,13 +19,34 @@ export default function Page() {
         <meta property="og:description" content="Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here." />
         <meta property="og:image" content="https://pch.wales/img/card_test.png" />
       </Head>
-      <div>
-        <h1>
-          Welcome!
-        </h1>
-        <p>
-          Let&apos;s work together to improve the quality-of-life for those with cancer in Wales through digital innovation.
-        </p>
+      <div className={style.contentRoot}>
+        <div className={style.contentSection}>
+          <h1>
+            Welcome!
+          </h1>
+          <p>
+            <b>
+              Let&apos;s work together to improve the quality-of-life for those with cancer in Wales through digital innovation.
+            </b>
+          </p>
+          <div className={style.divider} />
+          <p>
+            <i>
+              This site is still being created with more content to come, but take a look around and feel free to get in touch if you have any questions!
+            </i>
+          </p>
+        </div>
+        <div className={style.wideSection}>
+          <h2>
+            Here for the study?
+          </h2>
+          <p>
+            If you've seen one of the adverts for my study involving <b>cancer care receivers in South Wales</b>, you can find out more about it here:
+          </p>
+          <Link href="/resources/s02" className={style.button}>
+            Learn more &raquo;
+          </Link>
+        </div>
         <div className={style.contentSection}>
           <h2>The background</h2>
           <p>
