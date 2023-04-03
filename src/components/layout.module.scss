@@ -61,3 +61,47 @@
   // Outline
   border: 0.75rem theme.$primary-colour solid;
 }
+
+// For the main CTA
+.wideSection {
+  @extend .contentSection;
+
+  margin: 0 -10vw;
+  padding: 1rem 10vw;
+  background-color: theme.$secondary-colour;
+  box-shadow: inset 0px 0px 1rem 0px transparentize(theme.$dark-colour, 0.8);
+
+  // Centre align content
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+
+  // Typography
+  color: theme.$light-colour;
+
+  .button {
+    display: flex;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+
+    border-radius: 64px;
+    background-color: theme.$light-colour;
+
+    // Typography
+    color: theme.$secondary-colour;
+    font-family: theme.$title-font;
+    font-size: theme.$slightly-bigger-font-size;
+
+    &:focus {
+      outline: 2px theme.$primary-colour solid;
+    }
+
+    &:active {
+      background-color: theme.$primary-colour;
+      color: theme.$light-colour;
+      outline: 2px theme.$light-colour solid;
+    }
+  }
+}
+
