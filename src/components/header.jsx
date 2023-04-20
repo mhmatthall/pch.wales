@@ -17,13 +17,19 @@ export default function Header() {
       <nav className={style.navbar}>
         <ul>
           <li>
-            <NavLink className={style.button} href="/" exact>The project</NavLink>
+            <NavLink className={style.button} href="/" exact>
+              <h3>The project</h3>
+            </NavLink>
           </li>
           <li>
-            <NavLink className={style.button} href="/team">The team</NavLink>
+            <NavLink className={style.button} href="/team">
+              <h3>The team</h3>
+            </NavLink>
           </li>
           <li>
-            <NavLink className={style.button} href="/resources">Resources</NavLink>
+            <NavLink className={style.button} href="/resources">
+              <h3>Resources</h3>
+            </NavLink>
           </li>
         </ul>
       </nav>

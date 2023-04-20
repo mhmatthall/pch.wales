@@ -6,14 +6,19 @@
 
   // Override default <a> text style
   a {
-  color: theme.$light-colour;
-}
+    color: theme.$light-colour;
+  }
 }
 
 .logo {
   display: flex;
   height: 3rem;
   padding: 1rem theme.$page-margin;
+
+  // More space for when title overflows into 2 lines
+  @media (max-width: 520px) {
+    height: 4rem;
+  }
 
   img {
     padding-right: 0.5rem;
@@ -41,8 +46,11 @@
 
 .navbar {
   background-color: theme.$light-colour;
-  padding: 0.2rem theme.$page-margin;
-  box-shadow: 0px 10px 20px -10px transparentize(theme.$dark-colour, 0.8);
+  padding: 0 theme.$page-margin;
+
+  @media (max-width: 400px) {
+    padding-top: 0.1rem;
+  }
 
   ul {
     // Remove default bulleted list style
@@ -51,51 +59,75 @@
     margin: 0;
 
     display: flex;
-    gap: 0.2rem;
+    gap: 0.1rem;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
   }
 
   li {
     // Flex at equal widths
     flex: 1;
-  }
 
-  .button {
-    // Make clickable area span properly
-    display: block;
+    .button {
+      // Make clickable area span properly
+      display: block;
 
-    // Typography
-    font-family: theme.$title-font;
-    text-align: center;
+      // Button styling
+      color: theme.$primary-colour;
+      padding: 0.5rem 0;
+      border-radius: 0 0 16px 16px;
+      border-bottom: 2px solid transparentize(theme.$primary-colour, 0.8);
+      box-shadow: 0px 10px 20px -10px transparentize(theme.$dark-colour, 0.8);
 
-    // Button styling
-    padding: 0.5rem;
-    border-radius: 64px;
+      h3 {
+        // Override theme style
+        font-size: theme.$default-font-size;
+        font-family: theme.$title-font;
+        text-align: center;
+      }
 
-    // Transitions
-    transition: all 0.25s ease-out;
-
-    &:hover {
-      background-color: transparentize(theme.$primary-colour, 0.8);
-      box-shadow: inset 0px 0px 15px 10px theme.$light-colour;
-      letter-spacing: 0.05rem;
-    }
-
-    &:active {
-      // No transitions for the current page, thanks
-      transition: none;
-    }
-  }
-
-  // We need to stop name-mangling for the `id` property so NavLink can see it
-  :global {
-    #active {
-      outline: 2px solid theme.$primary-colour;
-      box-shadow: inset 0px 0px 10px 0px lighten($color: theme.$primary-colour, $amount: 25%);
+      // Subtle hover animation
+      transition: all 0.15s ease-in-out;
 
       &:hover {
-        // Override some button styling
-        background-color: theme.$light-colour;
-        letter-spacing: 0;
+        letter-spacing: 0.03rem;
+        box-shadow: 0px 10px 20px -10px transparentize(theme.$primary-colour, 0.8);
+
+        h3 {
+          font-size: theme.$slightly-bigger-font-size;
+        }
+      }
+    }
+
+    // We need to stop name-mangling for the `id` property so NavLink can see it
+    :global {
+      #active {
+        background-color: theme.$primary-colour;
+        color: theme.$light-colour;
+        padding: 0.5rem 0 0.75rem;
+
+        @media (max-width: 400px) {
+          border-radius: 16px;
+        }
+
+        // Underline accent
+        h3 {
+          width: fit-content;
+          margin: 0 auto;
+          border-bottom: 2px solid theme.$highlight-colour;
+        }
+
+        // Override hover animation; don't do anything
+        &:hover {
+          transition: none;
+          letter-spacing: 0;
+
+          h3 {
+            font-size: theme.$default-font-size;
+          }
+        }
       }
     }
   }
