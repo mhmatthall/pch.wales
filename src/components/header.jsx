@@ -1,21 +1,19 @@
 // pch.wales common header component
 import NavLink from "./navlink";
+import Link from "next/link";
 
 import style from "./header.module.scss";
 
 export default function Header() {
   return (
     <header className={style.container}>
-      <div className={style.logo}>
-        <img
-          src="/img/logo192.png"
-          alt="pch.wales"
-        />
+      <Link className={style.logo} href="/">
+        <img src="/img/logo192.png" alt="pch.wales" />
         <div className={style.logoText}>
           <h1 className={style.title}>Person-Centred Cancer Care for Wales</h1>
           <h2 className={style.subtitle}>Matt Hall&apos;s PhD project</h2>
         </div>
-      </div>
+      </Link>
       <nav className={style.navbar}>
         <ul>
           <li>

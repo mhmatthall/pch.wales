@@ -3,7 +3,11 @@
 .container {
   position: relative;
   background-color: theme.$primary-colour;
+
+  // Override default <a> text style
+  a {
   color: theme.$light-colour;
+}
 }
 
 .logo {
