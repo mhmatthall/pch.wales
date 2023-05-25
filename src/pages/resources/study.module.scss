@@ -26,6 +26,10 @@
   background: theme.$primary-colour;
 }
 
+.breadcrumb {
+  margin-top: 0.5rem;
+}
+
 // TODO: move to layout SCSS file
 .wide {
   margin: 0 -10vw;
@@ -49,7 +53,7 @@
 
     .fileCard {
       display: flex;
-      align-content: start;
+      align-content: flex-start;
       overflow: hidden;
 
       width: 8rem;

@@ -17,9 +17,11 @@ export default function Page() {
         <meta name="description" content="I think that there's room to make things better for those in South Wales undergoing cancer care – especially through thoughtfully-designed technology. I want to understand what cancer care receivers currently go through in South Wales and work with them to consider areas which could be improved as well as potential applications of technology which would enable more person-centred cancer care." />
       </Head>
       <div className={style.contentRoot}>
-        <Link href="/resources">
-          &laquo; Back to Resources
-        </Link>
+        <div className={style.breadcrumb}>
+          <Link href="/resources">
+            &laquo; Back to Resources
+          </Link>
+        </div>
         <div className={siteStyle.contentSection}>
           <h1 className={style.title}>
             Understanding the individual&apos;s perspective of cancer care in South Wales
