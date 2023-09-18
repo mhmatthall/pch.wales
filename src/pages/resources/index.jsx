@@ -14,15 +14,19 @@ export default function Page() {
         <title>{"Resources" + pageTitleSuffix}</title>
         <meta name="description" content="Template for resources page" />
       </Head>
-      <div>
-        <h1>
-          Resources
-        </h1>
+      <div className={style.contentSection}>
+        <h1>Resources</h1>
+        <p>This page is a work in progress.</p>
         <h2>Studies</h2>
-        <Link href="/resources/s02">
-          Study S02
-        </Link>
+        <ul>
+          <li>
+            <Link href="/resources/s02">Study S02</Link>
+          </li>
+          <li>
+            <Link href="/resources/s03">Study S03</Link>
+          </li>
+        </ul>
       </div>
     </Layout>
-  )
+  );
 }
