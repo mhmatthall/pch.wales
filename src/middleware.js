@@ -1,5 +1,5 @@
 // pch.wales middleware
-//    Makes all routes" URLs case-insensitive
+//    Makes all routes' URLs case-insensitive
 import { NextResponse } from "next/server";
 
 export function middleware(req) {
