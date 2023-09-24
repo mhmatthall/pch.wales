@@ -1,9 +1,6 @@
 // pch.wales home page content
 import Head from "next/head";
-import Link from "next/link";
-
 import Layout from "@/components/layout";
-
 import style from "@/components/layout.module.scss";
 
 export default function Page() {
@@ -15,7 +12,7 @@ export default function Page() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:url" content="https://pch.wales/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Matt Hall's PhD Project – Empowering those with cancer in Wales" />
+        <meta property="og:title" content="Matt Hall&apos;s PhD Project &ndash; Empowering those with cancer in Wales" />
         <meta property="og:description" content="Let's work together to improve the quality-of-life for those with cancer in Wales through digital innovation. Read more about my PhD project here." />
         <meta property="og:image" content="https://pch.wales/img/card_test.png" />
       </Head>
@@ -35,17 +32,6 @@ export default function Page() {
               This site is still being created with more content to come, but take a look around and feel free to get in touch if you have any questions!
             </i>
           </p>
-        </div>
-        <div className={style.wideSection}>
-          <h2>
-            Here for the study?
-          </h2>
-          <p>
-            If you&apos;ve seen one of the adverts for my study involving <b>cancer care receivers in South Wales</b>, you can find out more about it here:
-          </p>
-          <Link href="/resources/s02" className={style.button}>
-            Learn more &raquo;
-          </Link>
         </div>
         <div className={style.contentSection}>
           <h2>The background</h2>
@@ -137,36 +123,6 @@ export default function Page() {
             methodology; realigning PROMs to be instruments for empowering care
             receivers by having them as key stakeholders throughout the design
             stage.
-          </p>
-        </div>
-        <div className={style.contentSection}>
-          <h2>The team</h2>
-          <p>
-            <b>Matt Hall</b> is the project lead and a computer science PhD student
-            at Swansea University as a member of the{" "}
-            <a
-              href="https://people-first.best/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ECHIDNA Centre for Doctoral Training
-            </a>
-            .
-          </p>
-          <p>
-            <b>Dr. Simon Robinson</b> is a primary supervisor for the project and
-            associate professor in computer science at Swansea University, with a
-            wealth of experience in human-computer interaction (HCI) research.
-          </p>
-          <p>
-            <b>Dr. Matt Roach</b> is a primary supervisor for the project and
-            associate professor in computer science at Swansea University, with
-            extensive knowledge of machine learning and ethical AI systems.
-          </p>
-          <p>
-            <b>Prof. Alan Dix</b> is a primary supervisor for the project and Head
-            of the Computational Foundry at Swansea University, with decades of
-            experience in HCI research and a fantastic beard.
           </p>
         </div>
       </div>

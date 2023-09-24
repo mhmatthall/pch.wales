@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header className={style.container}>
       <Link className={style.logo} href="/">
-        <img src="/img/logo192.png" alt="pch.wales" />
+        <img src="/img/logo192.png" alt="pch.wales logo" />
         <div className={style.logoText}>
-          <h1 className={style.title}>Person-Centred Cancer Care for Wales</h1>
+          <h1 className={style.title}>Digital Person-Centred Cancer Care</h1>
           <h2 className={style.subtitle}>Matt Hall&apos;s PhD project</h2>
         </div>
       </Link>

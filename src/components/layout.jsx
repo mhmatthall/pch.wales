@@ -1,9 +1,7 @@
 // pch.wales default page layout
 import Head from "next/head";
-
 import Header from "./header";
 import Footer from "./footer";
-
 import style from "./layout.module.scss";
 
 // Global variables
@@ -26,7 +24,7 @@ export default function Layout({ children, isHome }) {
       <main className={style.main}>
         {children}
       </main>
-      <Footer showVunhstLogo={false} />
+      <Footer showVunhstLogo={true} />
     </div>
   );
 }
