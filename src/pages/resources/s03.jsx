@@ -68,9 +68,9 @@ export default function Page() {
           <p>Download the supporting documents for this study here:</p>
           <ul className={style.fileList}>
             <li className={style.fileCard}>
-              <Link href="/resources/s03/s03h01v01.pdf">
+              <Link href="/resources/s03/s03h01v02.pdf">
                 <img
-                  src="/resources/s03/s03h01v01.jpg"
+                  src="/resources/s03/s03h01v02.jpg"
                   alt="A preview of the cover of the factsheet"
                 />
                 <div className={style.fileName}>Study factsheet</div>
@@ -83,7 +83,12 @@ export default function Page() {
           <h3>Ethics</h3>
           <p>
             {
-              "Whilst it’s important that I have the freedom to observe and inquire about all aspects of practice in this study, I appreciate the need for discretion and respect – especially when this study might involve shadowing in the presence of patients. Whilst it’s difficult to pre-empt every scenario I might observe in this study, I’ll only gather data with the consent of those involved. Open reflection is an essential part of this study, and our findings will be mutually agreed as to minimise implication."
+              "It's important that I have the freedom to observe and inquire about all aspects of practice in this study. I'm not here to audit or judge anyone at Velindre, nor will our findings be used against anyone involved. Open reflection is an essential part of this study and I hope that it can bring about meaningful and useful improvements in practice and environment at Velindre."
+            }
+          </p>
+          <p>
+            {
+              "At the same time, I appreciate the need for discretion and respect – especially when this study might involve shadowing in the presence of patients. Whilst it's difficult to pre-empt every scenario I might observe in this study, I have worked hard to make this study flexible and able to adapt to the needs of the moment. I'll only be gathering data with the consent of everyone involved, and our findings will be mutually agreed as to avoid implication."
             }
           </p>
           <p>
@@ -93,7 +98,7 @@ export default function Page() {
           </p>
           <p>
             {
-              "Feel free to get in touch with any questions, feedback, or issues at any time – simply click the email button down below. Any complaints regarding this study can be sent to "
+              "Feel free to get in touch with any questions, feedback, or issues at any time – simply click the email button at the bottom of the page. Any complaints regarding this study can be sent to "
             }
             <Link href="mailto:researchintegrity@swansea.ac.uk">
               researchintegrity@swansea.ac.uk
