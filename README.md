@@ -8,16 +8,6 @@ Hey! I'm Matt and my PhD is all about empowering those with cancer in Wales by c
 
 **[View the site live: pch.wales!](https://pch.wales/)**
 
-## Technical details
-The site is built with Next.js, using modular Sass for styling and eslint for linting. It's hosted on a Node server in the UK, with CI/CD via Github Actions making it nice and easy to update, too!
-
-You're welcome to clone and re-use the site, but because it's a personal project it has some weird requirements. Namely, Node needs to be passed some secrets that are only really relevant for my requirements:
-
-| Key                      | Description              |
-| ------------------------ | ------------------------ |
-| `NOTION_API_KEY`         | Notion API [integration key](https://notion.so/my-integrations)    |
-| `NOTION_DATABASE_ID_S02` | Notion object ID for sending study S02 form responses to Notion DB |
-
 ## Thanks
 Thanks to all my friends and peers at Swansea University and Velindre University NHS Trust.
 
