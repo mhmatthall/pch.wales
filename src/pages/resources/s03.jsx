@@ -68,9 +68,9 @@ export default function Page() {
           <p>Download the supporting documents for this study here:</p>
           <ul className={style.fileList}>
             <li className={style.fileCard}>
-              <Link href="/resources/s03/s03h01v02.pdf">
+              <Link href="/resources/s03/s03h01v03_factsheet.pdf">
                 <img
-                  src="/resources/s03/s03h01v02.jpg"
+                  src="/resources/s03/s03h01v03_thumb.jpg"
                   alt="A preview of the cover of the factsheet"
                 />
                 <div className={style.fileName}>Study factsheet</div>
